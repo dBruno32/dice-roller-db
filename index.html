@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+ Author: Dominic Bruno
+ Class:  Software Engineering
+ Project: Lab 2 / Dice Roller
+ Description: This is the first version of my Dice Roller application and is being submitted as part of Lab 2.
+ File: index.html
+-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dice-Roller</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="rollAllDice();">
+        <div class="banner">
+            <h2>Software Engineering | Sprint-2, dice-roller app</h2>
+        </div>
+        <div class="heading" id="summary-text"><h1>Welcome to Dice Roller!</h1></div>
+
+        <div class="about">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Loading the page, automatically rolls the 5 dice.</li>
+                <li>Refreshing the page will reload the page and roll the dice.</li>
+                <li>Click 'Roll' button below to roll all 5 dice manually.</li>   
+                <li>When focused on the button, you can alternately click 'Enter' on the keyboard to roll the dice</li>             
+            </ul>
+        </div>
+
+        <div class="board">
+            <div class="dice-row">
+                <div class="dice-column">
+                    <h4>D1</h4>
+                </div>
+                <div class="dice-column">
+                    <h4>D2</h4>
+                </div>
+                <div class="dice-column">
+                    <h4>D3</h4>
+                </div>
+                <div class="dice-column">
+                    <h4>D4</h4>
+                </div>
+                <div class="dice-column">
+                    <h4>D5</h4>
+                </div>
+            </div>
+
+            <div class="button-box">
+                <button id="roll-button" onclick="rollAllDice();" autofocus>Roll</button>
+            </div>
+        </div>  
+
+        <script src="dice-roller-app.js"></script>
+    </body>
+</html>

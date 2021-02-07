@@ -1,0 +1,118 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family:monospace;
+}
+
+body {
+    background-color: #d4f5f1;
+}
+
+.banner {
+    background-color: #5fa6c7;
+    color: #ffffff;
+    text-align: right;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    border-bottom: 1px dotted #86b6c9;
+}
+
+.heading {
+    background-color: #8eb7d8;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    border-bottom: 2px dotted #e4f0ef;
+    color: #ffffff;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+}
+
+.about {
+    background-color: #bbdada;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 2%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: center;
+    list-style-position: inside;
+    box-shadow: 1px 1px 1px #000000;
+    font-size: large;
+}
+
+.about h2 {
+    padding-bottom: 4%;
+}
+
+.about:hover {
+    background-color: #fdffff;
+}
+
+.dice-row {
+    text-align: center;
+    background-color: #6893bb;
+    margin-top: 2%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    box-shadow: 1px 1px 1px #000000;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.dice-column {
+    display: inline-block;
+    background-color: #f3e0e0;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    box-shadow: 1px 1px 1px #000000;
+}   
+
+.dice-column h4 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.dice {
+    font-size: 275%;
+}
+
+.actual-value {
+    text-align: right;
+    font-size: larger;
+    font-style: italic;
+}
+
+.button-box {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    text-align: center;
+    background-color: #88a9b8;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-right: 25%;
+    margin-left: 25%;
+    box-shadow: 1px 1px 1px #000000;
+}
+
+#roll-button {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #2d80a7;
+    box-shadow: 1px 1px 1px #000000;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: #e4f0ef;
+}
+
+#roll-button:hover {
+    cursor: pointer;
+}
