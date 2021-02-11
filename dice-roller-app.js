@@ -25,7 +25,7 @@ class Dice {
     constructor(position_in) {
         this.position = position_in;
         this.value = 1;
-        this.valueString = "&#9856";
+        this.valueString = '&#9856';
     }
 
 /* 
@@ -62,17 +62,17 @@ getValueString() {
 */ 
     convertValueToUnicodeString() {
         if (this.value == 1) {
-            this.valueString = "&#9856";
+            this.valueString = '&#9856';
         } else if (this.value == 2) {
-            this.valueString = "&#9857";
+            this.valueString = '&#9857';
         } else if (this.value == 3) {
-            this.valueString = "&#9858";
+            this.valueString = '&#9858';
         } else if (this.value == 4) {
-            this.valueString = "&#9859";
+            this.valueString = '&#9859';
         } else if (this.value == 5) {
-            this.valueString = "&#9860";
+            this.valueString = '&#9860';
         } else if (this.value == 6) {
-            this.valueString = "&#9861";
+            this.valueString = '&#9861';
         } 
     }
 
@@ -91,13 +91,13 @@ getValueString() {
 *  Other: Utilizes document & appendChild() & getElementsByClassName() & createElement()
 */ 
     generateDiceTag() {
-        var allDiceColumns = document.getElementsByClassName("dice-column");
-        var d = document.createElement("h1");
-        d.className = "dice";
+        var allDiceColumns = document.getElementsByClassName('dice-column');
+        var d = document.createElement('h1');
+        d.className = 'dice';
         d.innerHTML = this.valueString;
         allDiceColumns[this.position].appendChild(d);
-        var v = document.createElement("h5");
-        v.className = "actual-value";
+        var v = document.createElement('h5');
+        v.className = 'actual-value';
         v.innerHTML = this.value;
         allDiceColumns[this.position].appendChild(v);
     }
@@ -108,8 +108,8 @@ getValueString() {
 *  Other: Indexes arrays of previously created dice and values by using this.positon
 */ 
     updateTags() {
-        var di = document.getElementsByClassName("dice");
-        var vals = document.getElementsByClassName("actual-value");
+        var di = document.getElementsByClassName('dice');
+        var vals = document.getElementsByClassName('actual-value');
         di[this.position].innerHTML = this.valueString;
         vals[this.position].innerHTML = this.value;
 
@@ -153,5 +153,5 @@ function rollAllDice() {
         allDice[i].roll();
         runningSum += allDice[i].getValue();
     }
-    document.getElementById("summary-text").innerHTML = "Congrats, you succesffuly rolled a " + runningSum + "!";
+    document.getElementById('summary-text').innerHTML = 'Congrats, you succesffuly rolled a ' + runningSum + '!';
 }
